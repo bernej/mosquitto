@@ -1,12 +1,12 @@
 Forked Mosquitto 2.0.14 with web socket support for CentOS 8
 =================
-There is zero support on the internet for Mosquitto > 1.6 in a CentOS based environment. The intention of this repo and README is to change that.
+There is zero support on the internet for Mosquitto > `1.6` in a CentOS based environment. The intention of this repo and README is to change that.
 
-The built-in CentOS package managers, `dnf` and `yum`, distribute Mosquitto 1.6, eventhough the Eclipse foundation is on v2.0.14 as of this writing.
+The built-in CentOS package managers, `dnf` and `yum`, distribute Mosquitto `1.6`, eventhough the Eclipse foundation is on `v2.0.14` as of this writing.
 
-Mosquitto v2 is required in order to get updated Mosquitto functionality such as `mosquitto_ctrl`, which makes dynamic security to an mqtt server more modern and flexible.
+Mosquitto v2 is required in order to get updated Mosquitto functionality such as `mosquitto_ctrl`, which makes dynamic security to an MQTT server more modern and flexible.
 
-Specifically, this repo is forked from Eclipse Mosquitto to help support Mosquitto v2 w/ web socket support on a CentOS 8 environment.
+Specifically, this repo is forked from Eclipse Mosquitto to enable Mosquitto v2 w/ web socket support on a CentOS 8 environment.
 
 ## Steps to reproduce
 
