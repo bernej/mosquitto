@@ -67,7 +67,7 @@ WITH_SYSTEMD:=no
 WITH_SRV:=no
 
 # Build with websockets support on the broker.
-WITH_WEBSOCKETS:=no
+WITH_WEBSOCKETS:=yes
 
 # Use elliptic keys in broker
 WITH_EC:=yes
@@ -370,8 +370,8 @@ endif
 
 ifeq ($(WITH_CJSON),yes)
 	CLIENT_CFLAGS:=$(CLIENT_CFLAGS) -DWITH_CJSON
-	CLIENT_LDADD:=$(CLIENT_LDADD) -lcjson
-	CLIENT_STATIC_LDADD:=$(CLIENT_STATIC_LDADD) -lcjson
+	CLIENT_LDADD:=$(CLIENT_LDADD) cjson/cJSON.c
+	CLIENT_STATIC_LDADD:=$(CLIENT_STATIC_LDADD) cjson/cJSON.c
 	CLIENT_LDFLAGS:=$(CLIENT_LDFLAGS)
 endif
 
